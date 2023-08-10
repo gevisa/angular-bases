@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
-  public name: string = 'iroman';
+  public name: string = 'IROMAN';
   public age: number = 45;
 
   get capitalizedName():string {
@@ -16,7 +16,7 @@ export class HeroComponent {
 
   getHeroDescription():string {
 
-    return `${ this.name }-${ this.age }`;
+    return `${ this.name.toLowerCase() }-${ this.age }`;
   }
 
   changeHero():void {
